@@ -17,16 +17,16 @@ h1 {
   text-align: center;
 }
 
-ul {
+ul{
   padding: 0;
-  margin: 0;
+  margin: 16px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
   font-family: "Orbitron", sans-serif;
-  color: rgb(236, 3, 3);
+  color: rgb(240, 233, 233);
 }
 
 .container-main {
@@ -35,3 +35,7 @@ ul {
   border-radius: 1rem;
 }
 
+.ico-tech {
+  padding: 4px 4px 4px 4px;
+  margin-bottom: 8;
+}
