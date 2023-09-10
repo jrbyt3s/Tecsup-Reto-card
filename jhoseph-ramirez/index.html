@@ -1,12 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jhoseph Ramirez</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/stiles.css" />
+    <link rel="stylesheet" href="assets/fonts/poppins/popping.css">
+    <title>Document</title>
 </head>
+
+<!--Vamos a Usar el estandar BEM-->
+
 <body>
-    <h1>Hola Jhoseph ramirez</h1>
-    <a href="../">ir a home</a>
+    <!-- Layout Principal-->
+    <div class="layout">
+        <!--Brarra lateral-->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+                <!--Informacion general del usuario-->
+                <div class="user-info__container-image">
+                    <img src="./assets/img/perfil_JR.webp" class="user-info__image"
+                        alt="foto de perfil de Jose Developer" width="200" height="200">
+                    <h2 class="user-info__name">Jose Ramirez</h2>
+                    <h4 class="user-info__job">Software Developer</h4>
+
+                </div>
+                <!--Menu de navegación-->
+                <nav class="layout__menu">
+                    <ul class="menu_list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre Mi</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Estudios</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-book"></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Links a redes sociales-->
+                <div class="user-info__links">
+                    <ul class="links__social">
+                        <li class="social__option">
+                            <a href="" class="social__link">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="" class="social__link">
+                                <i class="social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="" class="social__link">
+                                <i class="social__icon fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="" class="social__link">
+                                <i class="social__icon fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Boton del curriculum-->
+                <div class="div user-info__buttons">
+                    <a href="" class="user-info__btn"> Descargar CV</a>
+                </div>
+                <!--Pie de página-->
+                <footer class="user-info__footer">
+                    &copy; 2024 DevDevelopers Peru
+                </footer>
+            </section>
+
+            <!--Contenido principal-->
+            <main>
+                <section class="content__page">
+                    <h1 class="page__name">Joseph Ramirez</h1>
+                    <h2 class="page__job">Software developer</h2>
+                </section>
+            </main>
+
+        </aside>
+    </div>
 </body>
+
 </html>
