@@ -1,4 +1,82 @@
-body {
-    font-family: "Poppins";
+/*Definicion de variabless*/
+:root {
+    --primary-theme-color: #fff;
+    --secondary-theme-color: #04B4E0;
+    --primary-text-color: #fff;
+    --secondary-text-color: #555;
+    --prymary-shadow-color: green;
+    --light-primary-shadow-color: gray;
+    --primary-font-family: "Poppins";
+    --background_primary_color: #F2F7F9;
+    --color-transparent: transparent;
+    --color-titles: #222222;
+    --element-size: 16px;
 }
 
+/*Estructura General*/
+html {
+    font-size: 10px;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    background-color: var(--background_primary_color);
+    color: var(--secondary-text-color);
+    
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {
+    color: var(--color-titles);
+}
+
+/*Imagen de fondo*/
+.body {
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -20px -120px;
+
+}
+
+/*Estructura Principal*/
+
+.layout {
+    position: relative;
+    min-width: 1290px;
+    width: 75%;
+    height: 80vh;
+    min-height: 80vh;
+    margin: 10vh auto;
+
+    display: grid;
+    grid-template-areas: "aside content";
+    grid-template-columns: 30% 70%;
+
+    border-radius: 4rem;
+    box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
+
+    
+
+}
+/* Brrra latera de perfil ASIDE*/
+.layout__aside{
+    grid-area: aside;
+    border: blue;
+    border-radius: 4rem;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+layout__content{
+    grid-area: content;
+    border: magenta;
+}
