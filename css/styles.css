@@ -1,3 +1,17 @@
+/*
+-- Regla BEM: ---
+Para los stilos usa clases y no ID
+BEM = Bloque Elemento Modificador
+
+- "Class": Usa clases para modificar stilos
+- ID: Usa el ID para aplicar funcionalidad con Javascript
+- No usar etiquetas.
+- que todo se key selector.
+
+.bloque
+.bloque__elemento
+.bloque__elemento--modificador
+*/
 .body {
   min-height: 100vh;
   margin: 0;
@@ -10,16 +24,24 @@
   font-size: 1.5em;
 }
 
-h1 {
+.hero__title {
   font-family: "Orbitron", sans-serif;
   font-size: 60px;
   color: aliceblue;
   text-align: center;
 }
 
-ul{
+.hero {
+  background-color: rgba(0, 0, 0, 0.562);
+  padding: 48px;
+  border-radius: 1rem;
+}
+
+.hero__teamList,
+.hero__ico-tech {
   padding: 0;
   margin: 16px;
+  
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -27,12 +49,6 @@ ul{
   gap: 8px;
   font-family: "Orbitron", sans-serif;
   color: rgb(240, 233, 233);
-}
-
-.container-main {
-  background-color: rgba(0, 0, 0, 0.562);
-  padding: 48px;
-  border-radius: 1rem;
 }
 
 .ico-tech {
