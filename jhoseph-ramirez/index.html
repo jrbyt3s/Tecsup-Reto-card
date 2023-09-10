@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Estilos-->
-    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/stiles.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+
     <link rel="stylesheet" href="assets/fonts/poppins/popping.css">
     <title>Document</title>
 </head>
 
 <!--Vamos a Usar el estandar BEM-->
 
-<body>
+<body class="body">
     <!-- Layout Principal-->
     <div class="layout">
         <!--Brarra lateral-->
@@ -97,6 +99,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <!--Boton del curriculum-->
                 <div class="div user-info__buttons">
                     <a href="" class="user-info__btn"> Descargar CV</a>
@@ -105,18 +108,19 @@
                 <footer class="user-info__footer">
                     &copy; 2024 DevDevelopers Peru
                 </footer>
+
             </section>
 
-            <!--Contenido principal-->
-            <main>
-                <section class="content__page">
-                    <h1 class="page__name">Joseph Ramirez</h1>
-                    <h2 class="page__job">Software developer</h2>
-                </section>
-            </main>
-
         </aside>
+        <!--Contenido principal-->
+        <main class="layout__content">
+            <section class="content__page">
+                <h1 class="page__name">Joseph Ramirez</h1>
+                <h2 class="page__job">Software developer</h2>
+            </section>
+        </main>
     </div>
+
 </body>
 
 </html>
