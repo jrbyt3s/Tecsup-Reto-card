@@ -15,7 +15,7 @@ BEM = Bloque Elemento Modificador
 .body {
   min-height: 100vh;
   margin: 0;
-  background-image: url(https://besthqwallpapers.com/Uploads/25-6-2022/201206/thumb2-4k-blue-abstract-waves-vortex-3d-art-blue-wavy-background.jpg);
+  background-image: url("../img/Devcode.webp");
   background-size: cover;
   display: flex;
   align-items: center;
