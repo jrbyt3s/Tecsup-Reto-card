@@ -25,7 +25,7 @@ html {
     font-size: 1.5rem;
     background-color: var(--background_primary_color);
     color: var(--secondary-text-color);
-    
+
 }
 
 
@@ -64,19 +64,47 @@ h6 {
     border-radius: 4rem;
     box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
 
-    
+
 
 }
+
 /* Brrra latera de perfil ASIDE*/
-.layout__aside{
+.layout__aside {
     grid-area: aside;
-    border: blue;
-    border-radius: 4rem;
+
+    border-radius: 4rem 0 0 4rem;
     overflow: auto;
     overflow-x: hidden;
 }
 
-layout__content{
+.aside__user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    min-height: 100%;
+
+    background-color: var(--secondary-theme-color);
+    color: var(--primary-text-color);
+}
+
+.user-info__container-image {
+    position: relative;
+    display: inline-block;
+    height: 20rem;
+    margin-top: 7rem;
+    background-color: var(--primary-theme-color);
+    border: 3px solid var(--primary-theme-color);
+    border-radius: 15rem;
+    overflow: hidden;
+}
+
+.user-info__image {
+    width: 100%;
+}
+
+layout__content {
     grid-area: content;
     border: magenta;
 }

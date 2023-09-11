@@ -1,110 +1,57 @@
-/*Definicion de variabless*/
-:root {
-  --primary-theme-color: #fff;
-  --secondary-theme-color: #04B4E0;
-  --primary-text-color: #fff;
-  --secondary-text-color: #555;
-  --prymary-shadow-color: green;
-  --light-primary-shadow-color: gray;
-  --primary-font-family: "Poppins";
-  --background_primary_color: #F2F7F9;
-  --color-transparent: transparent;
-  --color-titles: #222222;
-  --element-size: 16px;
-}
+/*
+-- Regla BEM: ---
+Para los stilos usa clases y no ID
+BEM = Bloque Elemento Modificador
 
-/*Estructura General*/
-html {
-  font-size: 10px;
-}
+- "Class": Usa clases para modificar stilos
+- ID: Usa el ID para aplicar funcionalidad con Javascript
+- No usar etiquetas.
+- que todo se key selector.
 
+.bloque
+.bloque__elemento
+.bloque__elemento--modificador
+*/
 .body {
-  width: 100%;
-  height: 100%;
-  font-family: "Poppins", Helvetica, sans-serif;
-  font-size: 1.5rem;
-  background-color: var(--background_primary_color);
-  color: var(--secondary-text-color);
-
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h4,
-h6 {
-  color: var(--color-titles);
-}
-
-/*Imagen de fondo*/
-.body {
-  background-image: url("../img/fondo.png");
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("../img/Devcode.webp");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -20px -120px;
-
-}
-
-/*Estructura Principal*/
-
-.layout {
-  position: relative;
-  min-width: 1290px;
-  width: 75%;
-  height: 80vh;
-  min-height: 80vh;
-  margin: 10vh auto;
-
-  display: grid;
-  grid-template-areas: "aside content";
-  grid-template-columns: 30% 70%;
-
-  border-radius: 4rem;
-  box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
-
-
-
-}
-
-/* Brrra latera de perfil ASIDE*/
-.layout__aside {
-  grid-area: aside;
-
-  border-radius: 4rem 0 0 4rem;
-  overflow: auto;
-  overflow-x: hidden;
-}
-
-.aside__user-info {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  font-size: 1.5em;
+}
+
+.hero__title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 60px;
+  color: aliceblue;
   text-align: center;
-
-  min-height: 100%;
-
-  background-color: var(--secondary-theme-color);
-  color: var(--primary-text-color);
 }
 
-.user-info__container-image {
-  position: relative;
-  display: inline-block;
-  height: 20rem;
-  margin-top: 7rem;
-  background-color: var(--primary-theme-color);
-  border: 3px solid var(--primary-theme-color);
-  border-radius: 15rem;
-  overflow: hidden;
+.hero {
+  background-color: rgba(0, 0, 0, 0.562);
+  padding: 48px;
+  border-radius: 1rem;
 }
 
-.user-info__image {
-  width: 100%;
+.hero__teamList,
+.hero__ico-tech {
+  padding: 0;
+  margin: 16px;
+  
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  font-family: "Orbitron", sans-serif;
+  color: rgb(240, 233, 233);
 }
 
-layout__content {
-  grid-area: content;
-  border: magenta;
+.ico-tech {
+  padding: 4px 4px 4px 4px;
+  margin-bottom: 8;
 }
