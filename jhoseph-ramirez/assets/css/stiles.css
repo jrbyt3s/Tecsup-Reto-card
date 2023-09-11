@@ -94,15 +94,79 @@ h6 {
     display: inline-block;
     height: 20rem;
     margin-top: 7rem;
-    background-color: var(--primary-theme-color);
-    border: 3px solid var(--primary-theme-color);
-    border-radius: 15rem;
-    overflow: hidden;
+    z-index: 1;
+
 }
 
 .user-info__image {
     width: 100%;
+    background-color: var(--primary-theme-color);
+    border: 3px solid var(--primary-theme-color);
+    border-radius: 15rem;
+
 }
+
+.user-info__container-image::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 9%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-repeating-radial-gradient(center center, #FFF, #FFF 1px, transparent 0px, transparent 100%);
+    background-size: 0.6rem 0.6rem;
+    border-radius: 28rem;
+    opacity: 0.7;
+    border-color: white;
+
+}
+
+.user-info__name {
+    margin-top: 0.5em;
+    font-size: 1.8em;
+    font-weight: 200;
+    color: var(--primary-theme-color);
+}
+
+.user-info__job {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--primary-theme-color);
+}
+
+.layout__menu {
+    display: none;
+}
+
+.user-info__links {
+    margin-bottom: 2.5em;
+}
+
+.links__social {
+    margin-top: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.social__option {
+    height: 1.5m;
+    width: 1.5em;
+    font-size: 1.5em;
+    line-height: 3rem;
+    opacity: 0.9;
+    border-radius: 2em;
+    transition: all 300ms linear;
+
+}
+
+.social__option:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
 
 layout__content {
     grid-area: content;
